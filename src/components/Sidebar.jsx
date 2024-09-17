@@ -28,7 +28,7 @@ const Sidebar = ({ darkMode }) => {
   return (
     <div
       className={`min-h-screen inline-flex flex-col justify-between py-[25px] px-[15px] transition-all duration-300 ease-in-out ${extended ? "w-64" : "w-20"} 
-      ${darkMode ? "bg-gray-800 text-white" : "bg-[#e4e7eb] text-slate-700"}`}
+      ${darkMode ? "bg-slate-700 text-white" : "bg-[#e4e7eb] text-slate-700"}`}
       onTransitionEnd={handleTransitionEnd}
     >
       <div className={`flex flex-col ${fullyOpen ? "items-start" : "items-center"} justify-between`}>
@@ -74,7 +74,7 @@ const Sidebar = ({ darkMode }) => {
         <div className={`flex items-center gap-2 p-2 rounded-[50px] m-[8px] cursor-pointer hover:bg-gray-300 transition-all duration-300 ease-in-out 
         ${darkMode ? "text-white hover:bg-gray-700" : "text-slate-700 hover:bg-gray-300"}`}>
           <MdHistory className="text-2xl" />
-          {fullyOpen && <p>Activity</p>}
+          {fullyOpen && <p>History</p>}
         </div>
 
         <div className={`flex items-center gap-2 p-2 rounded-[50px] m-[8px] cursor-pointer hover:bg-gray-300 transition-all duration-300 ease-in-out 
